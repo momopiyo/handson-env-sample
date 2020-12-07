@@ -1,0 +1,9 @@
+---
+keyname: <キーペア名>
+volumesize: <ボリュームサイズ>
+imageid: <ベースイメージのAMIのID>
+instancetype: <インスタンスタイプ>
+subnetid: <サブネットID>
+groupset: <セキュリティグループ(複数の場合はカンマ区切り)>
+nametag: Ansible-Master
+howmany: 1

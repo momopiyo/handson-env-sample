@@ -1,0 +1,8 @@
+---
+
+- name: delete a cloudformation stack
+  cloudformation:
+    stack_name: "{{ item }}"
+    state: absent
+    region: ap-northeast-1
+  with_sequence: "start=1 end={{ howmany }} format=Ansible-Master%02d"

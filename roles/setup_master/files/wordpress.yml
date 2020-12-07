@@ -1,0 +1,10 @@
+---
+- name: Deploy Wordpress server
+  hosts: localhost
+  become: yes
+
+  tasks:
+  # 内容は省略しています
+  - name: Deploy Wordpress server
+    debug:
+      msg: "Deploy Wordpress server"

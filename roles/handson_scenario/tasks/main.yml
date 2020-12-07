@@ -1,0 +1,17 @@
+---
+- name: Install pip
+  yum:
+    name: python-pip
+    state: present
+
+- name: Install ansible
+  pip:
+    name: "ansible=={{ handson_ansible_version }}"
+
+- name: Execute playbook
+  shell: "ansible-playbook {{ item.dest }}"
+  loop: "{{ sample_playbook }}"
+
+- name: Check result
+  uri:
+    url: "{{ check_url }}"

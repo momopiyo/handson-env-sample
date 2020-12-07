@@ -1,0 +1,5 @@
+handson_ansible_version: 2.10.3 
+sample_playbook:
+  - src: wordpress.yml
+    dest: /home/ec2-user/handson/wordpress.yml
+check_url: http://localhost/wordpress
